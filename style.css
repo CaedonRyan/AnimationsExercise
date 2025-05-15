@@ -63,3 +63,28 @@ div {
     }
   }
 
+
+  #orange {
+    transition: transform 5s ease-in;
+  }
+  #orange:hover {
+    transform: rotate(1080deg);
+  }
+  #orange:not(:hover) {
+    transform: rotate(-1080deg);
+  }
+  
+  #purple {
+    animation: circle 2s forwards;
+  }
+  
+  @keyframes circle {
+    0% {
+      border-radius: 0;
+    }
+    100% {
+      border-radius: 85px;
+    }
+  }
+  
+
